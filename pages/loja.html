@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja EcoVerse - Todos os produtos sustentáveis">
+    <title>Loja - EcoVerse</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="../index.html">🌿 EcoVerse</a></h1>
+                </div>
+                <nav class="nav-main">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Página Título -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Nossa Loja</h1>
+                <p>Explore nossa seleção de produtos ecológicos e sustentáveis</p>
+            </div>
+        </section>
+
+        <!-- Filtros e Vitrine -->
+        <section class="shop-section">
+            <div class="container">
+                <div class="shop-layout">
+                    <!-- Sidebar de Filtros -->
+                    <aside class="filters-sidebar">
+                        <h3>Filtros</h3>
+                        
+                        <div class="filter-group">
+                            <h4>Categoria</h4>
+                            <label>
+                                <input type="checkbox" class="filter-checkbox" value="casa">
+                                Casa & Organização
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filter-checkbox" value="higiene">
+                                Higiene & Beleza
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filter-checkbox" value="alimentacao">
+                                Alimentação
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filter-checkbox" value="moda">
+                                Moda Sustentável
+                            </label>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Faixa de Preço</h4>
+                            <label>
+                                <input type="radio" name="price" value="ate-50">
+                                Até R$ 50
+                            </label>
+                            <label>
+                                <input type="radio" name="price" value="50-100">
+                                R$ 50 - R$ 100
+                            </label>
+                            <label>
+                                <input type="radio" name="price" value="100-200">
+                                R$ 100 - R$ 200
+                            </label>
+                            <label>
+                                <input type="radio" name="price" value="acima-200">
+                                Acima de R$ 200
+                            </label>
+                        </div>
+
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: 20px;">Limpar Filtros</button>
+                    </aside>
+
+                    <!-- Grid de Produtos -->
+                    <section class="products-container">
+                        <div class="products-grid">
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-1.webp" alt="Garrafa de água reutilizável">
+                                    <span class="badge">Promoção</span>
+                                </div>
+                                <h3>Garrafa Reutilizável</h3>
+                                <p class="price">R$ 89,90</p>
+                                <p class="description">Garrafa de vidro com proteção térmica</p>
+                                <a href="produto-detalhe.html?id=1" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-2.webp" alt="Kit de utensílios de bambu">
+                                </div>
+                                <h3>Kit Utensílios Bambu</h3>
+                                <p class="price">R$ 45,00</p>
+                                <p class="description">Talheres e palhetas de bambu biodegradável</p>
+                                <a href="produto-detalhe.html?id=2" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-3.jpg" alt="Sacola eco-friendly">
+                                </div>
+                                <h3>Sacola Ecológica</h3>
+                                <p class="price">R$ 35,90</p>
+                                <p class="description">Sacola feita com algodão orgânico</p>
+                                <a href="produto-detalhe.html?id=3" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-4.jpg" alt="Escova de dentes de bambu">
+                                </div>
+                                <h3>Escova de Dentes Bambu</h3>
+                                <p class="price">R$ 12,50</p>
+                                <p class="description">Escova biodegradável com cerdas naturais. Pack 3</p>
+                                <a href="produto-detalhe.html?id=4" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-5.jpg" alt="Copo reutilizável">
+                                </div>
+                                <h3>Copo Reutilizável</h3>
+                                <p class="price">R$ 28,90</p>
+                                <p class="description">Copo de bamboo com tampa hermética</p>
+                                <a href="produto-detalhe.html?id=5" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-6.jpg" alt="Shampoo sólido">
+                                </div>
+                                <h3>Shampoo Sólido Natural</h3>
+                                <p class="price">R$ 25,00</p>
+                                <p class="description">Shampoo sólido com ingredientes naturais</p>
+                                <a href="produto-detalhe.html?id=6" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-7.jpg" alt="Bolsa de compras">
+                                </div>
+                                <h3>Bolsa Compras Sustentável</h3>
+                                <p class="price">R$ 55,00</p>
+                                <p class="description">Bolsa em lona orgânica com compartimentos</p>
+                                <a href="produto-detalhe.html?id=7" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/produto-8.jpg" alt="Desodorante natural">
+                                </div>
+                                <h3>Desodorante Natural</h3>
+                                <p class="price">R$ 18,50</p>
+                                <p class="description">Desodorante livre de alumínio e parabenos</p>
+                                <a href="produto-detalhe.html?id=8" class="btn btn-secondary">Ver Detalhes</a>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EcoVerse</h4>
+                    <p>Sua loja de produtos sustentáveis para um planeta melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoVerse. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoVerse - Sua Loja Sustentável. Produtos ecológicos e sustentáveis de qualidade.">
+    <title>EcoVerse - Sua Loja Sustentável</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🌿 EcoVerse</h1>
+                </div>
+                <nav class="nav-main">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/loja.html">Loja</a></li>
+                        <li><a href="pages/sobre.html">Sobre Nós</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/faq.html">FAQ</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Banner com Carrossel -->
+        <section class="hero-banner">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item active" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);">
+                    <div class="carousel-content">
+                        <h2>Produtos Sustentáveis</h2>
+                        <p>Cuide do planeta enquanto cuida de você</p>
+                        <a href="pages/loja.html" class="btn btn-primary">Conhecer Produtos</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                    <div class="carousel-content">
+                        <h2>Promoção de Lançamento</h2>
+                        <p>Até 30% de desconto em produtos selecionados</p>
+                        <a href="pages/loja.html" class="btn btn-primary">Comprar Agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                    <div class="carousel-content">
+                        <h2>Entrega Ecológica</h2>
+                        <p>Embalagem 100% reciclável e carbono neutro</p>
+                        <a href="pages/sobre.html" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-prev" id="carouselPrev" aria-label="Slide anterior">❮</button>
+                <button class="carousel-next" id="carouselNext" aria-label="Próximo slide">❯</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Destaque -->
+        <section class="featured-products">
+            <div class="container">
+                <h2>Produtos em Destaque</h2>
+                <p class="section-subtitle">Conheça alguns dos nossos melhores produtos sustentáveis</p>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/produto-1.webp" alt="Garrafa de água reutilizável">
+                        </div>
+                        <h3>Garrafa Reutilizável</h3>
+                        <p class="price">R$ 89,90</p>
+                        <p class="description">Garrafa de vidro com proteção térmica para manter suas bebidas na temperatura ideal.</p>
+                        <a href="pages/produto-detalhe.html?id=1" class="btn btn-secondary">Ver Detalhes</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/produto-2.webp" alt="Kit de utensílios de bambu">
+                        </div>
+                        <h3>Kit Utensílios Bambu</h3>
+                        <p class="price">R$ 45,00</p>
+                        <p class="description">Talheres e palhetas de bambu biodegradável, perfeito para levar aonde quiser.</p>
+                        <a href="pages/produto-detalhe.html?id=2" class="btn btn-secondary">Ver Detalhes</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/produto-3.jpg" alt="Sacola eco-friendly">
+                        </div>
+                        <h3>Sacola Ecológica</h3>
+                        <p class="price">R$ 35,90</p>
+                        <p class="description">Sacola feita com algodão orgânico, durável e perfeita para compras sustentáveis.</p>
+                        <a href="pages/produto-detalhe.html?id=3" class="btn btn-secondary">Ver Detalhes</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/produto-4.jpg" alt="Escova de dentes de bambu">
+                        </div>
+                        <h3>Escova de Dentes Bambu</h3>
+                        <p class="price">R$ 12,50</p>
+                        <p class="description">Escova de dentes biodegradável com cerdas naturais. Pacote com 3 unidades.</p>
+                        <a href="pages/produto-detalhe.html?id=4" class="btn btn-secondary">Ver Detalhes</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA para Sobre Nós -->
+        <section class="cta-about">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Por que escolher EcoVerse?</h2>
+                    <p>Somos uma plataforma comprometida com a sustentabilidade e a qualidade de vida. Cada produto foi selecionado com cuidado para garantir que você está fazendo a escolha certa para o planeta.</p>
+                    <a href="pages/sobre.html" class="btn btn-primary">Conhecer Nossa História</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EcoVerse</h4>
+                    <p>Sua loja de produtos sustentáveis para um planeta melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="pages/sobre.html">Sobre Nós</a></li>
+                        <li><a href="pages/loja.html">Loja</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoVerse. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

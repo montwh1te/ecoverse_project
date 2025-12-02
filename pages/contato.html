@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contato - EcoVerse">
+    <title>Contato - EcoVerse</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="../index.html">🌿 EcoVerse</a></h1>
+                </div>
+                <nav class="nav-main">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Página Título -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <p>Queremos ouvir sua opinião, sugestões e dúvidas</p>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Informações de Contato -->
+                    <div class="contact-info">
+                        <h2>Informações de Contato</h2>
+                        
+                        <div class="contact-item">
+                            <h4>📍 Endereço</h4>
+                            <p>
+                                EcoVerse Ltda.<br>
+                                Rua da Sustentabilidade, 123<br>
+                                Centro - São Paulo, SP<br>
+                                CEP: 01000-000
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4>📞 Telefone</h4>
+                            <p>
+                                <a href="tel:+551133334444">(11) 3333-4444</a><br>
+                                <span class="text-small">Segunda a Sexta, 9h às 18h</span>
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4>📧 Email</h4>
+                            <p>
+                                <a href="mailto:contato@ecoverse.com.br">contato@ecoverse.com.br</a><br>
+                                <a href="mailto:suporte@ecoverse.com.br">suporte@ecoverse.com.br</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4>🕐 Horário de Atendimento</h4>
+                            <p>
+                                Segunda a Sexta: 9h às 18h<br>
+                                Sábado: 10h às 14h<br>
+                                Domingo: Fechado
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4>🌐 Redes Sociais</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Facebook</a>
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de Contato -->
+                    <div class="contact-form-wrapper">
+                        <h2>Formulário de Contato</h2>
+                        <form class="contact-form" id="contactForm" onsubmit="submitContactForm(event)">
+                            <!-- Campo 1: Nome Completo -->
+                            <div class="form-group">
+                                <label for="fullName">Nome Completo *</label>
+                                <input 
+                                    type="text" 
+                                    id="fullName" 
+                                    name="fullName" 
+                                    placeholder="Digite seu nome completo"
+                                    required
+                                >
+                                <span class="form-error" id="fullNameError"></span>
+                            </div>
+
+                            <!-- Campo 2: Email -->
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="seu.email@exemplo.com"
+                                    required
+                                >
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+
+                            <!-- Campo 3: Assunto -->
+                            <div class="form-group">
+                                <label for="subject">Assunto *</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    placeholder="Digite o assunto da sua mensagem"
+                                    required
+                                >
+                                <span class="form-error" id="subjectError"></span>
+                            </div>
+
+                            <!-- Campo 4: Mensagem -->
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="6" 
+                                    placeholder="Deixe sua mensagem aqui..."
+                                    required
+                                ></textarea>
+                                <span class="form-error" id="messageError"></span>
+                            </div>
+
+                            <!-- Campo 5: Checkbox - Newsletter -->
+                            <div class="form-group form-checkbox">
+                                <label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="newsletter" 
+                                        name="newsletter"
+                                    >
+                                    Desejo receber novidades e promoções da EcoVerse por email
+                                </label>
+                            </div>
+
+                            <!-- Botões do Formulário -->
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                                <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
+                            </div>
+
+                            <p class="form-note">* Campos obrigatórios</p>
+                        </form>
+
+                        <!-- Mensagem de Sucesso -->
+                        <div class="form-success" id="successMessage" style="display: none;">
+                            <p>✓ Obrigado! Sua mensagem foi enviada com sucesso. Retornaremos em breve!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa Interativo (Simulado) -->
+        <section class="contact-map">
+            <div class="map-placeholder">
+                <h3>Localização</h3>
+                <p>Clique para visualizar nosso endereço no mapa</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EcoVerse</h4>
+                    <p>Sua loja de produtos sustentáveis para um planeta melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoVerse. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function submitContactForm(event) {
+            event.preventDefault();
+            
+            // Limpar erros anteriores
+            document.querySelectorAll('.form-error').forEach(el => el.textContent = '');
+            
+            // Validação de formulário
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            let isValid = true;
+            
+            // Validar Nome Completo
+            if (fullName.length < 3) {
+                document.getElementById('fullNameError').textContent = 'Nome deve ter pelo menos 3 caracteres';
+                isValid = false;
+            }
+            
+            // Validar Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Email inválido';
+                isValid = false;
+            }
+            
+            // Validar Assunto
+            if (subject.length < 5) {
+                document.getElementById('subjectError').textContent = 'Assunto deve ter pelo menos 5 caracteres';
+                isValid = false;
+            }
+            
+            // Validar Mensagem
+            if (message.length < 10) {
+                document.getElementById('messageError').textContent = 'Mensagem deve ter pelo menos 10 caracteres';
+                isValid = false;
+            }
+            
+            // Se válido, mostrar sucesso
+            if (isValid) {
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+                
+                // Resetar formulário após 3 segundos
+                setTimeout(() => {
+                    document.getElementById('contactForm').reset();
+                    document.getElementById('contactForm').style.display = 'block';
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>

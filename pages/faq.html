@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQ - Perguntas Frequentes | EcoVerse">
+    <title>FAQ - Perguntas Frequentes - EcoVerse</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="../index.html">🌿 EcoVerse</a></h1>
+                </div>
+                <nav class="nav-main">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Página Título -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Perguntas Frequentes</h1>
+                <p>Encontre respostas para as dúvidas mais comuns</p>
+            </div>
+        </section>
+
+        <!-- FAQ com Accordion -->
+        <section class="faq-section">
+            <div class="container">
+                <!-- Barra de Busca -->
+                <div class="faq-search">
+                    <input type="text" id="faqSearch" placeholder="Buscar pergunta..." class="search-input">
+                </div>
+
+                <!-- Acordeon de FAQ -->
+                <div class="accordion" id="faqAccordion">
+                    <!-- Categoria: Entregas -->
+                    <h3 class="accordion-category">📦 Entregas e Envio</h3>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Qual é o prazo de entrega?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                O prazo de entrega varia de acordo com sua localização:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li><strong>Região Metropolitana:</strong> 2 a 3 dias úteis</li>
+                                    <li><strong>Interior:</strong> 4 a 7 dias úteis</li>
+                                    <li><strong>Outras Regiões:</strong> 7 a 15 dias úteis</li>
+                                </ul>
+                                Os prazos começam a contar após a confirmação do pagamento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Vocês entregam em todo o Brasil?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Sim! Entregamos em todo o Brasil, incluindo regiões remotas. No entanto, regiões muito distantes podem ter prazos mais longos e custos de frete maiores. Durante o processo de compra, você receberá uma cotação exata do frete para seu endereço.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Como é feito o rastreamento do pedido?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Após o envio, você receberá um código de rastreamento por email. Com este código, você poderá acompanhar seu pedido em tempo real no site da transportadora. Além disso, você receberá notificações automáticas sobre cada etapa da entrega.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Os produtos chegam com embalagem sustentável?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Absolutamente! Todos os produtos são embalados em:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Caixas de papelão reciclável</li>
+                                    <li>Papel kraft como material de preenchimento</li>
+                                    <li>Sem uso de plástico bolha ou poliestireno</li>
+                                    <li>Tinta à base de soja nos rótulos</li>
+                                </ul>
+                                Nossa entrega é totalmente carbon neutral através de compensação ambiental.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Categoria: Pagamento -->
+                    <h3 class="accordion-category">💳 Pagamento</h3>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Quais são as formas de pagamento aceitas?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Aceitamos as seguintes formas de pagamento:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Cartão de crédito (Visa, Mastercard, Elo)</li>
+                                    <li>Cartão de débito</li>
+                                    <li>PIX (instantâneo)</li>
+                                    <li>Boleto bancário</li>
+                                    <li>Parcelamento em até 12 vezes sem juros</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Meu pagamento é seguro?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Sim! Utilizamos protocolo SSL 256-bit para criptografar todos os dados de pagamento. Além disso, não armazenamos dados de cartão de crédito em nossos servidores. Todos os pagamentos são processados através de gateways certificados e confiáveis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Quanto tempo leva para confirmar o pagamento?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                O tempo de confirmação varia conforme o método:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li><strong>Cartão de Crédito/Débito:</strong> Instantâneo</li>
+                                    <li><strong>PIX:</strong> Até 1 hora</li>
+                                    <li><strong>Boleto:</strong> Até 2 dias úteis</li>
+                                    <li><strong>Parcelamento:</strong> Até 24 horas</li>
+                                </ul>
+                                Você receberá uma confirmação por email assim que o pagamento for processado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Categoria: Produtos -->
+                    <h3 class="accordion-category">🛍️ Produtos</h3>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Os produtos possuem garantia?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Sim! Todos os produtos possuem garantia contra defeitos de fabricação:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li><strong>Produtos em geral:</strong> 3 meses</li>
+                                    <li><strong>Eletrônicos:</strong> 6 meses a 1 ano (conforme fabricante)</li>
+                                    <li><strong>Produtos orgânicos:</strong> Até 30 dias após recebimento</li>
+                                </ul>
+                                Em caso de defeito, entre em contato conosco imediatamente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Posso devolver um produto?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Sim! Aceitamos devoluções em até 30 dias após o recebimento, desde que o produto esteja:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Não utilizado ou em perfeito estado</li>
+                                    <li>Com embalagem original</li>
+                                    <li>Com etiqueta intacta</li>
+                                    <li>Acompanhado de nota fiscal</li>
+                                </ul>
+                                O reembolso será processado em até 10 dias úteis após recebermos o produto de volta.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Como sei se um produto é vegano/orgânico/sustentável?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Cada página de produto contém informações detalhadas sobre certificações. Você encontrará:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Badges com certificações (orgânico, vegano, cruelty-free, etc.)</li>
+                                    <li>Composição completa dos ingredientes</li>
+                                    <li>Informações sobre o fabricante e suas práticas sustentáveis</li>
+                                    <li>Impacto ambiental estimado</li>
+                                </ul>
+                                Clique em "Informações Adicionais" para expandir todos os detalhes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Categoria: Conta e Perfil -->
+                    <h3 class="accordion-category">👤 Conta e Perfil</h3>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Como faço para criar uma conta?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Criar uma conta é gratuito e rápido:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Clique em "Criar Conta" no topo da página</li>
+                                    <li>Preencha seus dados (nome, email, senha)</li>
+                                    <li>Confirme seu email através do link enviado</li>
+                                    <li>Pronto! Você já pode fazer compras</li>
+                                </ul>
+                                Com uma conta, você terha acesso ao histórico de pedidos, endereços salvos e ofertas exclusivas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Esqueci minha senha. Como recupero?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Para recuperar sua senha:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Clique em "Esqueci minha senha" na página de login</li>
+                                    <li>Digite seu email cadastrado</li>
+                                    <li>Verifique seu email para o link de recuperação</li>
+                                    <li>Clique no link e defina uma nova senha</li>
+                                </ul>
+                                O link é válido por 24 horas. Se não receber o email, verifique sua pasta de spam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Meus dados são seguros?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Sim! Protegemos seus dados com:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Criptografia de ponta a ponta em todas as comunicações</li>
+                                    <li>Conformidade com LGPD (Lei Geral de Proteção de Dados)</li>
+                                    <li>Backup automático e redundância de servidores</li>
+                                    <li>Política rigorosa de privacidade</li>
+                                    <li>Autenticação de dois fatores disponível</li>
+                                </ul>
+                                Leia nossa Política de Privacidade para mais detalhes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Categoria: Suporte -->
+                    <h3 class="accordion-category">💬 Suporte</h3>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Como posso falar com o suporte?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Você pode entrar em contato através de:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li><strong>Email:</strong> suporte@ecoverse.com.br</li>
+                                    <li><strong>Chat ao vivo:</strong> Disponível no site (9h-18h, seg-sex)</li>
+                                    <li><strong>Telefone:</strong> (11) 3333-4444</li>
+                                    <li><strong>WhatsApp:</strong> (11) 99999-8888</li>
+                                    <li><strong>Redes Sociais:</strong> Instagram, Facebook, Twitter</li>
+                                </ul>
+                                Tempo médio de resposta: até 2 horas úteis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(event)">
+                            Vocês fazem devoluções de dinheiro?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Sim! Oferecemos reembolso total em caso de:
+                                <ul style="margin-top: 10px; margin-left: 20px;">
+                                    <li>Produto não corresponder à descrição</li>
+                                    <li>Produto chegou danificado</li>
+                                    <li>Arrependimento da compra (até 30 dias)</li>
+                                    <li>Produto com defeito ou vencido</li>
+                                </ul>
+                                O reembolso será processado para a mesma forma de pagamento usada na compra, em até 10 dias úteis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contato para mais dúvidas -->
+                <div class="faq-contact-cta">
+                    <h3>Não encontrou a resposta?</h3>
+                    <p>Entre em contato conosco, nossa equipe está pronta para ajudar!</p>
+                    <a href="contato.html" class="btn btn-primary">Enviar Mensagem</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EcoVerse</h4>
+                    <p>Sua loja de produtos sustentáveis para um planeta melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoVerse. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function toggleAccordion(event) {
+            const header = event.currentTarget;
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+            
+            // Fechar todos os acordeões abertos
+            document.querySelectorAll('.accordion-content').forEach(c => {
+                if (c !== content && c.classList.contains('active')) {
+                    c.classList.remove('active');
+                    c.previousElementSibling.querySelector('.accordion-icon').textContent = '+';
+                }
+            });
+            
+            // Toggle do acordeão atual
+            content.classList.toggle('active');
+            icon.textContent = icon.textContent === '+' ? '−' : '+';
+        }
+
+        // Busca de FAQ
+        document.getElementById('faqSearch').addEventListener('keyup', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const items = document.querySelectorAll('.accordion-item');
+            
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(searchTerm) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
