@@ -37,7 +37,7 @@ trabalho_final/
 │       └── ...
 │
 ├── README.md                       # Este arquivo
-└── github_copilot.md              # Proposta original do projeto
+└── .gitignore              # Arquivo removedor de rastreamento de arquivos do git
 ```
 
 ---
