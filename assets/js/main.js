@@ -156,7 +156,7 @@ function handleAccordionClick(header) {
         
         allIcons.forEach(i => {
             if (i !== icon) {
-                i.textContent = '+';
+                i.innerHTML = '&#10133;';
             }
         });
     }
@@ -164,10 +164,10 @@ function handleAccordionClick(header) {
     // Toggle do acordeão atual
     if (!isActive) {
         content.classList.add('active');
-        icon.textContent = '−';
+        icon.innerHTML = '&#8722;';
     } else {
         content.classList.remove('active');
-        icon.textContent = '+';
+        icon.innerHTML = '&#10133;';
     }
 }
 
@@ -280,7 +280,7 @@ function scrollToTop() {
 // Mostrar botão de scroll to top quando necessário
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.id = 'scrollTopBtn';
-scrollTopBtn.innerHTML = '↑';
+scrollTopBtn.innerHTML = '&uarr;';
 scrollTopBtn.style.cssText = `
     position: fixed;
     bottom: 20px;
