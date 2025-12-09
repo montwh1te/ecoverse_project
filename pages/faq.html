@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FAQ - Perguntas Frequentes | EcoVerse">
     <title>FAQ - Perguntas Frequentes - EcoVerse</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -53,7 +53,15 @@
                 <!-- Acordeon de FAQ -->
                 <div class="accordion" id="faqAccordion">
                     <!-- Categoria: Entregas -->
-                    <h3 class="accordion-category">&#x1f4e6; Entregas e Envio</h3>
+                    <div class="category-header">
+                        <button class="accordion-header category-header-btn" onclick="toggleCategoryDescription(event)">
+                            <span>&#x1f4e6; Entregas e Envio</span>
+                            <span class="accordion-icon">&#10133;</span>
+                        </button>
+                    </div>
+                    <div class="category-description accordion-content">
+                        <p>Informações sobre prazos de entrega, cobertura geográfica, rastreamento de pedidos e como cuidamos do meio ambiente em nossas embalagens.</p>
+                    </div>
 
                     <div class="accordion-item">
                         <button class="accordion-header" onclick="toggleAccordion(event)">
@@ -117,7 +125,15 @@
                     </div>
 
                     <!-- Categoria: Pagamento -->
-                    <h3 class="accordion-category">&#x1f4b3; Pagamento</h3>
+                    <div class="category-header">
+                        <button class="accordion-header category-header-btn" onclick="toggleCategoryDescription(event)">
+                            <span>&#x1f4b3; Pagamento</span>
+                            <span class="accordion-icon">&#10133;</span>
+                        </button>
+                    </div>
+                    <div class="category-description accordion-content">
+                        <p>Conheça todas as formas de pagamento disponíveis, segurança de transações e tempos de confirmação para cada método.</p>
+                    </div>
 
                     <div class="accordion-item">
                         <button class="accordion-header" onclick="toggleAccordion(event)">
@@ -170,7 +186,15 @@
                     </div>
 
                     <!-- Categoria: Produtos -->
-                    <h3 class="accordion-category">&#x1f6cd; Produtos</h3>
+                    <div class="category-header">
+                        <button class="accordion-header category-header-btn" onclick="toggleCategoryDescription(event)">
+                            <span>&#x1f6cd; Produtos</span>
+                            <span class="accordion-icon">&#10133;</span>
+                        </button>
+                    </div>
+                    <div class="category-description accordion-content">
+                        <p>Detalhes sobre garantia de produtos, políticas de devolução e como identificar certificações de sustentabilidade e qualidade.</p>
+                    </div>
 
                     <div class="accordion-item">
                         <button class="accordion-header" onclick="toggleAccordion(event)">
@@ -229,7 +253,15 @@
                     </div>
 
                     <!-- Categoria: Conta e Perfil -->
-                    <h3 class="accordion-category">&#x1f464; Conta e Perfil</h3>
+                    <div class="category-header">
+                        <button class="accordion-header category-header-btn" onclick="toggleCategoryDescription(event)">
+                            <span>&#x1f464; Conta e Perfil</span>
+                            <span class="accordion-icon">&#10133;</span>
+                        </button>
+                    </div>
+                    <div class="category-description accordion-content">
+                        <p>Aprenda como criar sua conta, recuperar sua senha e como protegemos seus dados pessoais com segurança de ponta.</p>
+                    </div>
 
                     <div class="accordion-item">
                         <button class="accordion-header" onclick="toggleAccordion(event)">
@@ -290,7 +322,15 @@
                     </div>
 
                     <!-- Categoria: Suporte -->
-                    <h3 class="accordion-category">&#x1f4ac; Suporte</h3>
+                    <div class="category-header">
+                        <button class="accordion-header category-header-btn" onclick="toggleCategoryDescription(event)">
+                            <span>&#x1f4ac; Suporte</span>
+                            <span class="accordion-icon">&#10133;</span>
+                        </button>
+                    </div>
+                    <div class="category-description accordion-content">
+                        <p>Conheça os canais de atendimento disponíveis, políticas de reembolso e como nossa equipe pode ajudá-lo da melhor forma.</p>
+                    </div>
 
                     <div class="accordion-item">
                         <button class="accordion-header" onclick="toggleAccordion(event)">
@@ -374,7 +414,7 @@
         </div>
     </footer>
 
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.min.js"></script>
     <script>
         function toggleAccordion(event) {
             const header = event.currentTarget;
@@ -383,7 +423,7 @@
             
             // Fechar todos os acordeões abertos
             document.querySelectorAll('.accordion-content').forEach(c => {
-                if (c !== content && c.classList.contains('active')) {
+                if (c !== content && c.classList.contains('active') && !c.classList.contains('category-description')) {
                     c.classList.remove('active');
                     c.previousElementSibling.querySelector('.accordion-icon').innerHTML = '&#10133;';
                 }
@@ -392,6 +432,25 @@
             // Toggle do acordeão atual
             content.classList.toggle('active');
             icon.innerHTML = icon.innerHTML === '&#10133;' ? '&#8722;' : '&#10133;';
+        }
+
+        function toggleCategoryDescription(event) {
+            event.preventDefault();
+            const btn = event.currentTarget;
+            const description = btn.parentElement.nextElementSibling;
+            const icon = btn.querySelector('.accordion-icon');
+            
+            // Fechar outras descrições de categoria abertas
+            document.querySelectorAll('.category-description.active').forEach(desc => {
+                if (desc !== description) {
+                    desc.classList.remove('active');
+                    desc.previousElementSibling.querySelector('.accordion-icon').innerHTML = '&#10133;';
+                }
+            });
+            
+            // Toggle da descrição atual
+            description.classList.toggle('active');
+            icon.innerHTML = description.classList.contains('active') ? '&#8722;' : '&#10133;';
         }
 
         // Busca de FAQ

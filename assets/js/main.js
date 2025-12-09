@@ -164,6 +164,7 @@ function handleAccordionClick(header) {
     // Toggle do acordeão atual
     if (!isActive) {
         content.classList.add('active');
+        icon.style = 'color: purple;'
         icon.innerHTML = '&#8722;';
     } else {
         content.classList.remove('active');
